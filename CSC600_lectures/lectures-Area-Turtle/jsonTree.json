@@ -1,0 +1,1 @@
+{"tag":"_Tree.NODE","contents":"0","left":{"tag":"_Tree.NODE","contents":"1","left":{"tag":"_Tree.LEAF"},"right":{"tag":"_Tree.LEAF"}},"right":{"tag":"_Tree.NODE","contents":"1","left":{"tag":"_Tree.NODE","contents":"2","left":{"tag":"_Tree.LEAF"},"right":{"tag":"_Tree.LEAF"}},"right":{"tag":"_Tree.LEAF"}}}
