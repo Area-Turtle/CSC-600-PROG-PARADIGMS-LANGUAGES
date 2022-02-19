@@ -1,0 +1,10 @@
+hw2.ts(517,34): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(...items: ConcatArray<string>[]): string[]', gave the following error.
+    Argument of type 'number' is not assignable to parameter of type 'ConcatArray<string>'.
+  Overload 2 of 2, '(...items: (string | ConcatArray<string>)[]): string[]', gave the following error.
+    Argument of type 'number' is not assignable to parameter of type 'string | ConcatArray<string>'.
+hw2.ts(530,34): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(...items: ConcatArray<string>[]): string[]', gave the following error.
+    Argument of type 'number' is not assignable to parameter of type 'ConcatArray<string>'.
+  Overload 2 of 2, '(...items: (string | ConcatArray<string>)[]): string[]', gave the following error.
+    Argument of type 'number' is not assignable to parameter of type 'string | ConcatArray<string>'.

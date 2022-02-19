@@ -1,0 +1,71 @@
+Problem 1a:
+    input: isEven,2,isOdd,4,isEven,-10
+    expected: true,9,false,48,true,3228
+    actual: true,1,false,1,true,1
+    Points for problem: 0 out of 3
+
+Problem 1b:
+    input: isEven,2,isOdd,4,isEven,-10
+    expected: true,5,false,6,true,14
+    actual: true,1,false,1,true,1
+    Points for problem: 0 out of 3
+
+Problem 2a:
+    input: {"contents":2}
+    expected: {"contents":3}
+    actual: {"contents":3}
+    input: {"contents":3,"left":{"contents":2}}
+    expected: {"contents":6,"left":{"contents":4}}
+    actual: undefined
+    input: {"contents":3,"left":{"contents":2},"right":{"contents":3,"left":{"contents":4},"right":{"contents":5}}}
+    expected: {"contents":"a3","left":{"contents":"a2"},"right":{"contents":"a3","left":{"contents":"a4"},"right":{"contents":"a5"}}}
+    actual: undefined
+    Points for problem: 1 out of 3
+
+Problem 2b:
+    input: {"contents":2}
+    expected: {"contents":3}
+    actual: {"contents":2}
+    input: {"contents":3,"left":{"contents":2},"right":{"contents":4},"middle":{"contents":1}}
+    expected: {"contents":6,"left":{"contents":4},"right":{"contents":8},"middle":{"contents":2}}
+    actual: undefined
+    input: {"contents":2,"left":{"contents":2},"right":{"contents":3,"right":{"contents":2}}}
+    expected: {"contents":"a2","left":{"contents":"a2"},"right":{"contents":"a3","right":{"contents":"a2"}}}
+    actual: undefined
+    Points for problem: 0 out of 3
+
+Problem 2c:
+    input: {"contents":2}
+    expected: {"contents":2}
+    actual: {"contents":2}
+    input: {"contents":3,"left":{"contents":2},"right":{"contents":4},"middle":{"contents":1}}
+    expected: {"contents":3,"left":{"contents":1,"left":{"contents":2}},"right":{"contents":4}}
+    actual: undefined
+TypeError: hwTr.toTree2 is not a function
+    Points for problem: 1 out of 3
+
+Problem 3a/b/c allPathsSatisfyingPredicate:
+    RangeError: Maximum call stack size exceeded
+    RangeError: Maximum call stack size exceeded
+    RangeError: Maximum call stack size exceeded
+    Points for problem: 0 out of 3
+
+Problem 3a/b/c fillInMissingPath:
+TypeError: Cannot read property 'arr' of undefined
+TypeError: Cannot read property 'arr' of undefined
+TypeError: Cannot read property 'arr' of undefined
+    Points for problem: 0 out of 3
+
+Problem 3d allPathsSatisfyingPredicate:
+RangeError: Maximum call stack size exceeded
+RangeError: Maximum call stack size exceeded
+RangeError: Maximum call stack size exceeded
+    Points for problem: 0 out of 3
+
+Problem 3d fillInMissingPath:
+TypeError: Cannot read property 'arr' of undefined
+TypeError: Cannot read property 'arr' of undefined
+TypeError: Cannot read property 'arr' of undefined
+    Points for problem: 0 out of 3
+
+Total score: 2 of 27, or 7%
