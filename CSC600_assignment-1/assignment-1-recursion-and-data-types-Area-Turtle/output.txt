@@ -1,0 +1,1685 @@
+Q1a Tests
+expected: 707264 	homework: 707264
+expected: 89440 	homework: 89440
+expected: 11440 	homework: 11440
+expected: 1496 	homework: 1496
+expected: 204 	homework: 204
+expected: 30 	homework: 30
+expected: 5 	homework: 5
+expected: 1 	homework: 1
+expected: 0 	homework: 0
+expected: 0 	homework: 0
+
+
+Q1b Tests
+expected: 707264    	homework: 707264
+expected: 89440    	homework: 89440
+expected: 11440    	homework: 11440
+expected: 1496    	homework: 1496
+expected: 204    	homework: 204
+expected: 30    	homework: 30
+expected: 5    	homework: 5
+expected: 1    	homework: 1
+expected: 0    	homework: 0
+expected: 0    	homework: RangeError: Maximum call stack size exceeded
+
+
+Q2a Tests
+input: {} 
+expected: {} 
+homework: {}
+
+input: {
+  "contents": 1,
+  "left": {
+    "contents": 2,
+    "left": {},
+    "right": {
+      "contents": 4,
+      "left": {},
+      "right": {}
+    }
+  },
+  "right": {
+    "contents": 3,
+    "left": {
+      "contents": 5,
+      "left": {},
+      "right": {}
+    },
+    "right": {
+      "contents": 6,
+      "left": {},
+      "right": {}
+    }
+  }
+} 
+expected: {
+  "contents": 6,
+  "rest": {
+    "contents": 5,
+    "rest": {
+      "contents": 3,
+      "rest": {
+        "contents": 4,
+        "rest": {
+          "contents": 2,
+          "rest": {
+            "contents": 1,
+            "rest": {}
+          }
+        }
+      }
+    }
+  }
+} 
+homework: {}
+
+input: {
+  "contents": 64,
+  "left": {
+    "contents": 11,
+    "left": {},
+    "right": {
+      "contents": 30,
+      "left": {},
+      "right": {}
+    }
+  },
+  "right": {
+    "contents": 23,
+    "left": {},
+    "right": {
+      "contents": 10,
+      "left": {
+        "contents": 85,
+        "left": {},
+        "right": {}
+      },
+      "right": {}
+    }
+  }
+} 
+expected: {
+  "contents": 85,
+  "rest": {
+    "contents": 10,
+    "rest": {
+      "contents": 23,
+      "rest": {
+        "contents": 30,
+        "rest": {
+          "contents": 11,
+          "rest": {
+            "contents": 64,
+            "rest": {}
+          }
+        }
+      }
+    }
+  }
+} 
+homework: {}
+
+input: {
+  "contents": 65,
+  "left": {
+    "contents": 4,
+    "left": {},
+    "right": {
+      "contents": 18,
+      "left": {},
+      "right": {}
+    }
+  },
+  "right": {
+    "contents": 82,
+    "left": {},
+    "right": {
+      "contents": 52,
+      "left": {
+        "contents": 42,
+        "left": {},
+        "right": {}
+      },
+      "right": {
+        "contents": 35,
+        "left": {
+          "contents": 74,
+          "left": {},
+          "right": {
+            "contents": 19,
+            "left": {},
+            "right": {}
+          }
+        },
+        "right": {
+          "contents": 95,
+          "left": {},
+          "right": {
+            "contents": 20,
+            "left": {
+              "contents": 34,
+              "left": {},
+              "right": {}
+            },
+            "right": {}
+          }
+        }
+      }
+    }
+  }
+} 
+expected: {
+  "contents": 34,
+  "rest": {
+    "contents": 20,
+    "rest": {
+      "contents": 95,
+      "rest": {
+        "contents": 19,
+        "rest": {
+          "contents": 74,
+          "rest": {
+            "contents": 35,
+            "rest": {
+              "contents": 42,
+              "rest": {
+                "contents": 52,
+                "rest": {
+                  "contents": 82,
+                  "rest": {
+                    "contents": 18,
+                    "rest": {
+                      "contents": 4,
+                      "rest": {
+                        "contents": 65,
+                        "rest": {}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+} 
+homework: {}
+
+input: {
+  "contents": 26,
+  "left": {
+    "contents": 58,
+    "left": {},
+    "right": {
+      "contents": 23,
+      "left": {},
+      "right": {}
+    }
+  },
+  "right": {
+    "contents": 3,
+    "left": {
+      "contents": 46,
+      "left": {
+        "contents": 93,
+        "left": {},
+        "right": {
+          "contents": 39,
+          "left": {},
+          "right": {}
+        }
+      },
+      "right": {
+        "contents": 75,
+        "left": {},
+        "right": {
+          "contents": 86,
+          "left": {
+            "contents": 4,
+            "left": {},
+            "right": {}
+          },
+          "right": {
+            "contents": 78,
+            "left": {
+              "contents": 29,
+              "left": {},
+              "right": {
+                "contents": 64,
+                "left": {},
+                "right": {}
+              }
+            },
+            "right": {
+              "contents": 46,
+              "left": {},
+              "right": {
+                "contents": 9,
+                "left": {
+                  "contents": 70,
+                  "left": {},
+                  "right": {}
+                },
+                "right": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "right": {
+      "contents": 60,
+      "left": {
+        "contents": 5,
+        "left": {},
+        "right": {}
+      },
+      "right": {
+        "contents": 2,
+        "left": {
+          "contents": 16,
+          "left": {},
+          "right": {
+            "contents": 37,
+            "left": {},
+            "right": {}
+          }
+        },
+        "right": {
+          "contents": 96,
+          "left": {},
+          "right": {
+            "contents": 56,
+            "left": {
+              "contents": 22,
+              "left": {},
+              "right": {}
+            },
+            "right": {}
+          }
+        }
+      }
+    }
+  }
+} 
+expected: {
+  "contents": 22,
+  "rest": {
+    "contents": 56,
+    "rest": {
+      "contents": 96,
+      "rest": {
+        "contents": 37,
+        "rest": {
+          "contents": 16,
+          "rest": {
+            "contents": 2,
+            "rest": {
+              "contents": 5,
+              "rest": {
+                "contents": 60,
+                "rest": {
+                  "contents": 70,
+                  "rest": {
+                    "contents": 9,
+                    "rest": {
+                      "contents": 46,
+                      "rest": {
+                        "contents": 64,
+                        "rest": {
+                          "contents": 29,
+                          "rest": {
+                            "contents": 78,
+                            "rest": {
+                              "contents": 4,
+                              "rest": {
+                                "contents": 86,
+                                "rest": {
+                                  "contents": 75,
+                                  "rest": {
+                                    "contents": 39,
+                                    "rest": {
+                                      "contents": 93,
+                                      "rest": {
+                                        "contents": 46,
+                                        "rest": {
+                                          "contents": 3,
+                                          "rest": {
+                                            "contents": 23,
+                                            "rest": {
+                                              "contents": 58,
+                                              "rest": {
+                                                "contents": 26,
+                                                "rest": {}
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+} 
+homework: {}
+
+
+
+Q2b Tests
+input: {} 
+expected:  
+homework: 
+
+input: {
+  "contents": 6,
+  "rest": {
+    "contents": 5,
+    "rest": {
+      "contents": 3,
+      "rest": {
+        "contents": 4,
+        "rest": {
+          "contents": 2,
+          "rest": {
+            "contents": 1,
+            "rest": {}
+          }
+        }
+      }
+    }
+  }
+} 
+expected: 6,5,3,4,2,1 
+homework: 
+
+input: {
+  "contents": 85,
+  "rest": {
+    "contents": 10,
+    "rest": {
+      "contents": 23,
+      "rest": {
+        "contents": 30,
+        "rest": {
+          "contents": 11,
+          "rest": {
+            "contents": 64,
+            "rest": {}
+          }
+        }
+      }
+    }
+  }
+} 
+expected: 85,10,23,30,11,64 
+homework: 
+
+input: {
+  "contents": 34,
+  "rest": {
+    "contents": 20,
+    "rest": {
+      "contents": 95,
+      "rest": {
+        "contents": 19,
+        "rest": {
+          "contents": 74,
+          "rest": {
+            "contents": 35,
+            "rest": {
+              "contents": 42,
+              "rest": {
+                "contents": 52,
+                "rest": {
+                  "contents": 82,
+                  "rest": {
+                    "contents": 18,
+                    "rest": {
+                      "contents": 4,
+                      "rest": {
+                        "contents": 65,
+                        "rest": {}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+} 
+expected: 34,20,95,19,74,35,42,52,82,18,4,65 
+homework: 
+
+input: {
+  "contents": 22,
+  "rest": {
+    "contents": 56,
+    "rest": {
+      "contents": 96,
+      "rest": {
+        "contents": 37,
+        "rest": {
+          "contents": 16,
+          "rest": {
+            "contents": 2,
+            "rest": {
+              "contents": 5,
+              "rest": {
+                "contents": 60,
+                "rest": {
+                  "contents": 70,
+                  "rest": {
+                    "contents": 9,
+                    "rest": {
+                      "contents": 46,
+                      "rest": {
+                        "contents": 64,
+                        "rest": {
+                          "contents": 29,
+                          "rest": {
+                            "contents": 78,
+                            "rest": {
+                              "contents": 4,
+                              "rest": {
+                                "contents": 86,
+                                "rest": {
+                                  "contents": 75,
+                                  "rest": {
+                                    "contents": 39,
+                                    "rest": {
+                                      "contents": 93,
+                                      "rest": {
+                                        "contents": 46,
+                                        "rest": {
+                                          "contents": 3,
+                                          "rest": {
+                                            "contents": 23,
+                                            "rest": {
+                                              "contents": 58,
+                                              "rest": {
+                                                "contents": 26,
+                                                "rest": {}
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+} 
+expected: 22,56,96,37,16,2,5,60,70,9,46,64,29,78,4,86,75,39,93,46,3,23,58,26 
+homework: 
+
+
+
+Q2c Tests
+input:  
+expected: {} 
+homework: {}
+
+input: 6,5,3,4,2,1 
+expected: {
+  "contents": 4,
+  "left": {
+    "contents": 5,
+    "left": {
+      "contents": 6,
+      "left": {},
+      "right": {}
+    },
+    "right": {
+      "contents": 3,
+      "left": {},
+      "right": {}
+    }
+  },
+  "right": {
+    "contents": 1,
+    "left": {
+      "contents": 2,
+      "left": {},
+      "right": {}
+    },
+    "right": {}
+  }
+} 
+homework: {
+  "contents": 6,
+  "left": {
+    "contents": 5,
+    "left": {},
+    "right": {}
+  },
+  "right": {
+    "contents": 3,
+    "left": {},
+    "right": {}
+  }
+}
+
+input: 85,10,23,30,11,64 
+expected: {
+  "contents": 30,
+  "left": {
+    "contents": 10,
+    "left": {
+      "contents": 85,
+      "left": {},
+      "right": {}
+    },
+    "right": {
+      "contents": 23,
+      "left": {},
+      "right": {}
+    }
+  },
+  "right": {
+    "contents": 64,
+    "left": {
+      "contents": 11,
+      "left": {},
+      "right": {}
+    },
+    "right": {}
+  }
+} 
+homework: {
+  "contents": 85,
+  "left": {
+    "contents": 10,
+    "left": {},
+    "right": {}
+  },
+  "right": {
+    "contents": 23,
+    "left": {},
+    "right": {}
+  }
+}
+
+input: 34,20,95,19,74,35,42,52,82,18,4,65 
+expected: {
+  "contents": 42,
+  "left": {
+    "contents": 19,
+    "left": {
+      "contents": 20,
+      "left": {
+        "contents": 34,
+        "left": {},
+        "right": {}
+      },
+      "right": {
+        "contents": 95,
+        "left": {},
+        "right": {}
+      }
+    },
+    "right": {
+      "contents": 35,
+      "left": {
+        "contents": 74,
+        "left": {},
+        "right": {}
+      },
+      "right": {}
+    }
+  },
+  "right": {
+    "contents": 18,
+    "left": {
+      "contents": 82,
+      "left": {
+        "contents": 52,
+        "left": {},
+        "right": {}
+      },
+      "right": {}
+    },
+    "right": {
+      "contents": 65,
+      "left": {
+        "contents": 4,
+        "left": {},
+        "right": {}
+      },
+      "right": {}
+    }
+  }
+} 
+homework: {
+  "contents": 34,
+  "left": {
+    "contents": 20,
+    "left": {},
+    "right": {}
+  },
+  "right": {
+    "contents": 95,
+    "left": {},
+    "right": {}
+  }
+}
+
+input: 22,56,96,37,16,2,5,60,70,9,46,64,29,78,4,86,75,39,93,46,3,23,58,26 
+expected: {
+  "contents": 29,
+  "left": {
+    "contents": 5,
+    "left": {
+      "contents": 37,
+      "left": {
+        "contents": 56,
+        "left": {
+          "contents": 22,
+          "left": {},
+          "right": {}
+        },
+        "right": {
+          "contents": 96,
+          "left": {},
+          "right": {}
+        }
+      },
+      "right": {
+        "contents": 2,
+        "left": {
+          "contents": 16,
+          "left": {},
+          "right": {}
+        },
+        "right": {}
+      }
+    },
+    "right": {
+      "contents": 9,
+      "left": {
+        "contents": 70,
+        "left": {
+          "contents": 60,
+          "left": {},
+          "right": {}
+        },
+        "right": {}
+      },
+      "right": {
+        "contents": 64,
+        "left": {
+          "contents": 46,
+          "left": {},
+          "right": {}
+        },
+        "right": {}
+      }
+    }
+  },
+  "right": {
+    "contents": 93,
+    "left": {
+      "contents": 86,
+      "left": {
+        "contents": 4,
+        "left": {
+          "contents": 78,
+          "left": {},
+          "right": {}
+        },
+        "right": {}
+      },
+      "right": {
+        "contents": 39,
+        "left": {
+          "contents": 75,
+          "left": {},
+          "right": {}
+        },
+        "right": {}
+      }
+    },
+    "right": {
+      "contents": 23,
+      "left": {
+        "contents": 3,
+        "left": {
+          "contents": 46,
+          "left": {},
+          "right": {}
+        },
+        "right": {}
+      },
+      "right": {
+        "contents": 26,
+        "left": {
+          "contents": 58,
+          "left": {},
+          "right": {}
+        },
+        "right": {}
+      }
+    }
+  }
+} 
+homework: {
+  "contents": 22,
+  "left": {
+    "contents": 56,
+    "left": {},
+    "right": {}
+  },
+  "right": {
+    "contents": 96,
+    "left": {},
+    "right": {}
+  }
+}
+
+
+
+Q2d Tests
+input: {} 
+expected: NaN 
+homework: undefined
+
+input: {
+  "contents": 4,
+  "left": {
+    "contents": 5,
+    "left": {
+      "contents": 6,
+      "left": {},
+      "right": {}
+    },
+    "right": {
+      "contents": 3,
+      "left": {},
+      "right": {}
+    }
+  },
+  "right": {
+    "contents": 1,
+    "left": {
+      "contents": 2,
+      "left": {},
+      "right": {}
+    },
+    "right": {}
+  }
+} 
+expected: 1 
+homework: undefined
+
+input: {
+  "contents": 30,
+  "left": {
+    "contents": 10,
+    "left": {
+      "contents": 85,
+      "left": {},
+      "right": {}
+    },
+    "right": {
+      "contents": 23,
+      "left": {},
+      "right": {}
+    }
+  },
+  "right": {
+    "contents": 64,
+    "left": {
+      "contents": 11,
+      "left": {},
+      "right": {}
+    },
+    "right": {}
+  }
+} 
+expected: 10 
+homework: undefined
+
+input: {
+  "contents": 42,
+  "left": {
+    "contents": 19,
+    "left": {
+      "contents": 20,
+      "left": {
+        "contents": 34,
+        "left": {},
+        "right": {}
+      },
+      "right": {
+        "contents": 95,
+        "left": {},
+        "right": {}
+      }
+    },
+    "right": {
+      "contents": 35,
+      "left": {
+        "contents": 74,
+        "left": {},
+        "right": {}
+      },
+      "right": {}
+    }
+  },
+  "right": {
+    "contents": 18,
+    "left": {
+      "contents": 82,
+      "left": {
+        "contents": 52,
+        "left": {},
+        "right": {}
+      },
+      "right": {}
+    },
+    "right": {
+      "contents": 65,
+      "left": {
+        "contents": 4,
+        "left": {},
+        "right": {}
+      },
+      "right": {}
+    }
+  }
+} 
+expected: 4 
+homework: undefined
+
+input: {
+  "contents": 29,
+  "left": {
+    "contents": 5,
+    "left": {
+      "contents": 37,
+      "left": {
+        "contents": 56,
+        "left": {
+          "contents": 22,
+          "left": {},
+          "right": {}
+        },
+        "right": {
+          "contents": 96,
+          "left": {},
+          "right": {}
+        }
+      },
+      "right": {
+        "contents": 2,
+        "left": {
+          "contents": 16,
+          "left": {},
+          "right": {}
+        },
+        "right": {}
+      }
+    },
+    "right": {
+      "contents": 9,
+      "left": {
+        "contents": 70,
+        "left": {
+          "contents": 60,
+          "left": {},
+          "right": {}
+        },
+        "right": {}
+      },
+      "right": {
+        "contents": 64,
+        "left": {
+          "contents": 46,
+          "left": {},
+          "right": {}
+        },
+        "right": {}
+      }
+    }
+  },
+  "right": {
+    "contents": 93,
+    "left": {
+      "contents": 86,
+      "left": {
+        "contents": 4,
+        "left": {
+          "contents": 78,
+          "left": {},
+          "right": {}
+        },
+        "right": {}
+      },
+      "right": {
+        "contents": 39,
+        "left": {
+          "contents": 75,
+          "left": {},
+          "right": {}
+        },
+        "right": {}
+      }
+    },
+    "right": {
+      "contents": 23,
+      "left": {
+        "contents": 3,
+        "left": {
+          "contents": 46,
+          "left": {},
+          "right": {}
+        },
+        "right": {}
+      },
+      "right": {
+        "contents": 26,
+        "left": {
+          "contents": 58,
+          "left": {},
+          "right": {}
+        },
+        "right": {}
+      }
+    }
+  }
+} 
+expected: 2 
+homework: undefined
+
+
+
+Q3a Tests
+expected: {} 
+homework: {}
+
+expected: {
+  "contents": 5,
+  "left": {
+    "contents": 3,
+    "child": {
+      "contents": 2,
+      "left": {
+        "contents": 1,
+        "child": {}
+      },
+      "right": {
+        "contents": 4,
+        "child": {}
+      }
+    }
+  },
+  "right": {
+    "contents": 7,
+    "left": {
+      "contents": 6,
+      "child": {}
+    },
+    "right": {
+      "contents": 8,
+      "child": {}
+    }
+  }
+} 
+homework: {
+  "contents": 5,
+  "left": {
+    "contents": 3,
+    "child": {
+      "contents": 2,
+      "left": {
+        "contents": 1,
+        "child": {}
+      },
+      "right": {
+        "contents": 4,
+        "child": {}
+      }
+    }
+  },
+  "right": {
+    "contents": 7,
+    "left": {
+      "contents": 6,
+      "child": {}
+    },
+    "right": {
+      "contents": 8,
+      "child": {}
+    }
+  }
+}
+
+expected: {
+  "contents": 5,
+  "child": {
+    "contents": 3,
+    "left": {
+      "contents": 2,
+      "left": {
+        "contents": 1,
+        "left": {},
+        "right": {
+          "contents": 4,
+          "child": {}
+        }
+      },
+      "right": {
+        "contents": 3,
+        "child": {}
+      }
+    },
+    "right": {
+      "contents": 7,
+      "left": {
+        "contents": 6,
+        "child": {}
+      },
+      "right": {
+        "contents": 8,
+        "child": {
+          "contents": 9,
+          "child": {}
+        }
+      }
+    }
+  }
+} 
+homework: {
+  "contents": 5,
+  "child": {
+    "contents": 3,
+    "left": {
+      "contents": 2,
+      "left": {
+        "contents": 1,
+        "left": {},
+        "right": {
+          "contents": 4,
+          "child": {}
+        }
+      },
+      "right": {
+        "contents": 3,
+        "child": {}
+      }
+    },
+    "right": {
+      "contents": 7,
+      "left": {
+        "contents": 6,
+        "child": {}
+      },
+      "right": {
+        "contents": 8,
+        "child": {
+          "contents": 9,
+          "child": {}
+        }
+      }
+    }
+  }
+}
+
+
+
+Q3b Tests
+expected: {
+  "contents": 3,
+  "left": {
+    "contents": 2,
+    "child": {
+      "contents": 1,
+      "child": {}
+    }
+  },
+  "right": {
+    "contents": 5,
+    "child": {
+      "contents": 4,
+      "child": {}
+    }
+  }
+} 
+honework: {
+  "contents": "3",
+  "left": {
+    "contents": "2",
+    "child": {
+      "contents": "1",
+      "child": {}
+    }
+  },
+  "right": {
+    "contents": "5",
+    "child": {
+      "contents": "4",
+      "child": {}
+    }
+  }
+}
+
+expected: {
+  "contents": 4,
+  "left": {
+    "contents": 2,
+    "left": {
+      "contents": 1,
+      "child": {}
+    },
+    "right": {
+      "contents": 3,
+      "child": {}
+    }
+  },
+  "right": {
+    "contents": 6,
+    "child": {
+      "contents": 5,
+      "child": {}
+    }
+  }
+} 
+honework: {
+  "contents": "4",
+  "left": {
+    "contents": "2",
+    "left": {
+      "contents": "1",
+      "child": {}
+    },
+    "right": {
+      "contents": "3",
+      "child": {}
+    }
+  },
+  "right": {
+    "contents": "6",
+    "child": {
+      "contents": "5",
+      "child": {}
+    }
+  }
+}
+
+
+
+Q3c Tests
+input: {
+  "contents": 3,
+  "left": {
+    "contents": 2,
+    "child": {
+      "contents": 1,
+      "child": {}
+    }
+  },
+  "right": {
+    "contents": 5,
+    "child": {
+      "contents": 4,
+      "child": {}
+    }
+  }
+} 
+expected: {
+  "contents": 3,
+  "left": {
+    "contents": 2,
+    "left": {
+      "contents": 1,
+      "left": {},
+      "right": {}
+    },
+    "right": {}
+  },
+  "right": {
+    "contents": 5,
+    "left": {
+      "contents": 4,
+      "left": {},
+      "right": {}
+    },
+    "right": {}
+  }
+} 
+honework: {}
+
+input: {
+  "contents": 4,
+  "left": {
+    "contents": 2,
+    "left": {
+      "contents": 1,
+      "child": {}
+    },
+    "right": {
+      "contents": 3,
+      "child": {}
+    }
+  },
+  "right": {
+    "contents": 6,
+    "child": {
+      "contents": 5,
+      "child": {}
+    }
+  }
+} 
+expected: {
+  "contents": 4,
+  "left": {
+    "contents": 2,
+    "left": {
+      "contents": 1,
+      "left": {},
+      "right": {}
+    },
+    "right": {
+      "contents": 3,
+      "left": {},
+      "right": {}
+    }
+  },
+  "right": {
+    "contents": 6,
+    "left": {
+      "contents": 5,
+      "left": {},
+      "right": {}
+    },
+    "right": {}
+  }
+} 
+honework: {}
+
+input: {} 
+expected: {} 
+honework: {}
+
+input: {
+  "contents": 5,
+  "left": {
+    "contents": 3,
+    "child": {
+      "contents": 2,
+      "left": {
+        "contents": 1,
+        "child": {}
+      },
+      "right": {
+        "contents": 4,
+        "child": {}
+      }
+    }
+  },
+  "right": {
+    "contents": 7,
+    "left": {
+      "contents": 6,
+      "child": {}
+    },
+    "right": {
+      "contents": 8,
+      "child": {}
+    }
+  }
+} 
+expected: {
+  "contents": 5,
+  "left": {
+    "contents": 3,
+    "left": {
+      "contents": 2,
+      "left": {
+        "contents": 1,
+        "left": {},
+        "right": {}
+      },
+      "right": {
+        "contents": 4,
+        "left": {},
+        "right": {}
+      }
+    },
+    "right": {}
+  },
+  "right": {
+    "contents": 7,
+    "left": {
+      "contents": 6,
+      "left": {},
+      "right": {}
+    },
+    "right": {
+      "contents": 8,
+      "left": {},
+      "right": {}
+    }
+  }
+} 
+honework: {}
+
+input: {
+  "contents": 5,
+  "child": {
+    "contents": 3,
+    "left": {
+      "contents": 2,
+      "left": {
+        "contents": 1,
+        "left": {},
+        "right": {
+          "contents": 4,
+          "child": {}
+        }
+      },
+      "right": {
+        "contents": 3,
+        "child": {}
+      }
+    },
+    "right": {
+      "contents": 7,
+      "left": {
+        "contents": 6,
+        "child": {}
+      },
+      "right": {
+        "contents": 8,
+        "child": {
+          "contents": 9,
+          "child": {}
+        }
+      }
+    }
+  }
+} 
+expected: {
+  "contents": 5,
+  "left": {
+    "contents": 3,
+    "left": {
+      "contents": 2,
+      "left": {
+        "contents": 1,
+        "left": {},
+        "right": {
+          "contents": 4,
+          "left": {},
+          "right": {}
+        }
+      },
+      "right": {
+        "contents": 3,
+        "left": {},
+        "right": {}
+      }
+    },
+    "right": {
+      "contents": 7,
+      "left": {
+        "contents": 6,
+        "left": {},
+        "right": {}
+      },
+      "right": {
+        "contents": 8,
+        "left": {
+          "contents": 9,
+          "left": {},
+          "right": {}
+        },
+        "right": {}
+      }
+    }
+  },
+  "right": {}
+} 
+honework: {}
+
+
+
+Q4a tests
+input: [
+  {
+    "url": "https://example.org/?afternoon=aftermath&books=balance",
+    "links": [
+      {
+        "url": "https://www.example.edu/argument/birds",
+        "links": [
+          {
+            "url": "http://example.edu/bath/actor.php",
+            "links": [
+              {
+                "url": "https://example.org/?afternoon=aftermath&books=balance",
+                "links": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "url": "https://example.org/?afternoon=aftermath&books=balance",
+        "links": []
+      },
+      {
+        "url": "http://example.edu/bath/actor.php",
+        "links": [
+          {
+            "url": "https://example.org/?afternoon=aftermath&books=balance\"",
+            "links": [
+              {
+                "url": "http://basin.example.com/adjustment/belief.php",
+                "links": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+] 
+expected: [
+  "http://basin.example.com/adjustment/belief.php",
+  "http://example.edu/bath/actor.php",
+  "http://example.edu/bath/actor.php",
+  "https://example.org/?afternoon=aftermath&books=balance",
+  "https://example.org/?afternoon=aftermath&books=balance",
+  "https://example.org/?afternoon=aftermath&books=balance",
+  "https://example.org/?afternoon=aftermath&books=balance\"",
+  "https://www.example.edu/argument/birds"
+] 
+homework: []
+
+input: [
+  {
+    "url": "http://www.example.org/",
+    "links": [
+      {
+        "url": "http://actor.example.net/base/account.aspx",
+        "links": []
+      },
+      {
+        "url": "http://ants.example.org/",
+        "links": [
+          {
+            "url": "http://actor.example.net/base.aspx",
+            "links": [
+              {
+                "url": "http://example.com/?beginner=basketball&amusement=amount\"",
+                "links": [
+                  {
+                    "url": "https://example.com/argument/bikes.php?brass=board",
+                    "links": [
+                      {
+                        "url": "http://example.com/?beginner=basketball&amusement=amount",
+                        "links": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+] 
+expected: [
+  "http://actor.example.net/base.aspx",
+  "http://actor.example.net/base/account.aspx",
+  "http://ants.example.org/",
+  "http://example.com/?beginner=basketball&amusement=amount",
+  "http://example.com/?beginner=basketball&amusement=amount\"",
+  "http://www.example.org/",
+  "https://example.com/argument/bikes.php?brass=board"
+] 
+homework: []
+
+input: [] 
+expected: [] 
+homework: []
+
+input: [
+  {
+    "url": "https://www.example.com/?amusement=agreement",
+    "links": [
+      {
+        "url": "https://www.example.com/aunt/authority.php",
+        "links": []
+      },
+      {
+        "url": "http://example.com/",
+        "links": [
+          {
+            "url": "http://example.com/books?advice=bir\"",
+            "links": [
+              {
+                "url": "http://example.com/?beginner=basketball&amusement=amount",
+                "links": [
+                  {
+                    "url": "https://example.net/apparel.html",
+                    "links": [
+                      {
+                        "url": "http://bomb.example.org/",
+                        "links": [
+                          {
+                            "url": "http://www.example.com/beginner.php",
+                            "links": [
+                              {
+                                "url": "http://example.com/books?advice=bir",
+                                "links": [
+                                  {
+                                    "url": "http://advertisement.example.edu/afterthought/aunt",
+                                    "links": []
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+] 
+expected: [
+  "http://advertisement.example.edu/afterthought/aunt",
+  "http://bomb.example.org/",
+  "http://example.com/",
+  "http://example.com/?beginner=basketball&amusement=amount",
+  "http://example.com/books?advice=bir",
+  "http://example.com/books?advice=bir\"",
+  "http://www.example.com/beginner.php",
+  "https://example.net/apparel.html",
+  "https://www.example.com/?amusement=agreement",
+  "https://www.example.com/aunt/authority.php"
+] 
+homework: []
+
+
+
+Q4b tests
+input: https://example.org/?afternoon=aftermath&books=balance in test0 
+expected: 3 
+homework: 0
+
+input: http://example.com/?beginner=basketball&amusement=amount in test1 
+expected: 1 
+homework: 0
+
+input: http://example.com/?beginner=basketball&amusement=amount in test2 
+expected: 0 
+homework: 0
+
+input: http://example.com/books?advice=bir in test3 
+expected: 1 
+homework: 0
+
+
+
+Q4c tests
+input: https://example.org/?afternoon=aftermath&books=balance in test1 
+expected: 3 
+homework: 0
+
+input: http://example.com/?beginner=basketball&amusement=amount in test1 
+expected: 1 
+homework: 0
+
+input: http://example.com/?beginner=basketball&amusement=amount in test1 
+expected: 0 
+homework: 0
+
+input: http://example.com/books?advice=bir in test1 
+expected: 1 
+homework: 0
+
